@@ -1,0 +1,530 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body background="subwayy.jpg">
+
+
+  <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Previous entries: </p>
+        <script src="index.js"></script>
+
+
+  <!-- building a pessanger counter ap -->
+  <!-- topic 1 => setting script file    // line 16--> 
+
+
+  <!-- <h1> People entered</h1>
+  <h2 id="count-el">0</h2>
+
+  <button id="increment-btn" onclick="increment()">increment</button>
+
+
+  <button id="save-btn" onclick="save()">SAVE</button> -->
+
+  <!-- wrritng script between body -->
+
+  <script>
+  // document.getElementById("count-el").innerText = 0
+
+  </script>
+
+  <!-- we can write script in body but we can aslo make a new file like index.js where we can wrte javascript -->
+  <!-- write above script in new js file -->
+  <!-- now we will link the new js file -->
+
+  <!-- <script src="index.js"></script> -->
+
+  <!-- its working because javascript work from top to bottom considering the most fresh lines -->
+
+  <!-- ------------------------------------------------------>
+
+  <!-- topic 2 => writing variables -->
+
+  <!-- creating varibale -->
+
+  <!-- //variable decleraion    let count = 0 -->
+  <!-- console.log(count) -->
+
+  <!-- console is used for debugging purpose -->
+  <!-- console.log?(count)  will print the value of count-->
+
+  <!-- we will do some more pratices -->
+
+  <!-- initialize a varibale MyAge and set its value to yourAge -->
+  <!--   // to store data variable are decleared -->
+
+  <!-- let MyAge = 20 -->
+
+  <!-- log MyAge  variable to console -->
+
+  <!-- console.log(MyAge) -->
+
+  <!-- this would print 20 because my age is 20 -->
+
+
+
+  <!-- topic 3 => doing matheamtical oeprations -->
+
+  <!-- we can do various operaion liKe + - * / -->
+
+  <!-- let count = 5+7 ( it wil print 12) -->
+
+  <!-- if we have more than one variables then it  goes liKe -->
+
+  <!-- let Myage = 12
+    Let Yourage=14
+    let count = Myage + Yourage
+
+    console.log(count)
+
+    it will print 26 -->
+
+  <!-- TO DO EXCERCISE 
+       //CREATE TWO VARIBALES Myage and MyDogAge (=>  1 human year = 7 dog years)
+       //multiply both and store in MyDogAge
+       //log MyDogAge TO CONSOLE
+
+      ====>        let MyAge = 20
+                   MyDogAge = 7 
+                   count = MyAge * MyDogAge
+                   console.log(count)\
+                            ====> it will result 140
+
+         
+    -->
+
+  <!-- ======> topic: REASSIGNING ADND INCREMENTING -->
+
+  <!-- LET COUNT = 10
+                           IF U DO 
+                              LET COUNT =12
+                              then the value stored will  be considered 12
+                                beacause javascript worKs from top to bottom considering 
+                                the latst vaue      -->
+
+  <!-- INCREMENTING-->
+
+
+  <!--  count = 1 
+                                        to increment it 
+
+                                        count = count +1 
+                                                                        
+                                     TO DO 
+                                     // create a variable bonus point and set is value to 50
+                                        and increse it 100
+                                     
+                                    // decrease it down to 2 and finally increase to 70
+                                    // cosole log the value after each step
+                                    
+                                    =====> let Bonuspoint = 50
+                                           conole.log(bonuspoint)
+
+                      increase to 100 ==> bonuspoint = Bonuspoint + 50
+                                          console.log(bonudpoint)  
+                      
+                      decrease to 25 ===> Bonuspoint = Bonuspoint - 75
+                                          console.log(bonuspoint)                   
+
+                      increase to 70 ===> Bonuspoint = Bonuspoint + 40
+                                         console.log(Bonuspoint)
+
+
+                                
+                                    ADDING BUTTON -->
+
+  <!-- making button
+
+                                           syntax ===>   <button></button> -->
+
+  <!--// we will make button of name increment with id increment-btn -->
+
+  <!--// <button id="increment-btn">increment</button> //(commenting it bcz we will use it below in LINE 158) -->
+
+
+
+
+  <!-- ONCLICk EVENT LISTENER    ( TO MAkE THE BUTTON WORk) -->
+
+
+  <!-- FOLLOWING ARE THE STEPS -->
+
+          <!-- <button id="increment-btn" onclick="increment()">INCREMENT</button> -->
+  <!-- // INTTIALIZE COUNT AS 0
+                                        
+                                             // LISTEN FOR CLICkS ON INCREMENT BUTTON
+
+                                             // INCREMENT THE COUNT WHEN BUTTON IS CLICkED
+
+                                             // CHNAGE COUNT-EL IN HTML TO REFLECT NEW COUNT
+                                        -->
+
+  <!-- IN JS FILE WE WILL MAkE A FUNCTION
+                                              
+                                                   FUNCTION INCREMENT (){
+                                                        ANYTHING WE WILL WRITE IN THIS FUNCTION BODY WILL BE EXECUTED WHENEVER WE CALL THIS FUCNTION
+                                                     
+                                                   } 
+
+                                              -->
+
+  <!-- <button id="increment-btn" onclick="increment()">increment</button> -->
+
+
+
+  <!-- ABOvE LINE MEANS THAT WHENEVER BUTTON IS CLICkED DISPLAY WHAT IS WRITTEN IN FUNCTION NAMED INCREMENT OR IN EASY WORDS FUNCTION INCREMENT IS CALLED -->
+
+
+
+
+  <!-- functions  -->
+
+  <!-- spposee you are making a car game, it hsa follwing  -->
+  <!-- 
+                                                 // start with countdown
+                                                 //code     console.log(5) 
+                                                            console.log(4) 
+                                                            console.log(3)    
+                                                            console.log(2)) 
+                                                            console.log(1) 
+
+                                                // race starts
+
+                                                // race ends
+
+                                                // race again start (to start aagain u need countdown again)
+
+                                                            console.log(5) 
+                                                            console.log(4) 
+                                                            console.log(3)    
+                                                            console.log(2)) 
+                                                            console.log(1)
+                                               so it make you write more  and same lines of code with repetition
+
+                                               functions helps u in writing less code and to finish repetions
+
+                                              ==> so how we would do it with function ?
+
+                                              in the javascript file we will create a function whcih incldes the countdown
+
+                                              and call it everytime we need it.
+
+                                              it goes like
+
+
+
+                                              function countdown (){
+                                                             
+                                                            console.log(5) 
+                                                            console.log(4) 
+                                                            console.log(3)    
+                                                            console.log(2)) 
+                                                            console.log(1)
+ 
+                                             }            (functions are wriiten in js file)
+                                   
+                                              ===> race starts
+                                              function call ==> countdown()   ===> will do like 5-4-3-2-1
+                                              
+                                              ========> race ends
+                                              function call===> countdown()
+
+
+                                                CREATING YOUR FIRST FUNCTION                 -->
+
+  <!-- // CREATE FUNCTION WITH NAME OF TOUR CHOICE AND THEN LOG OUT 42 
+                    
+                CREATING FUNCTION ===>  function my() {
+
+                                                console.log(42)
+
+                                            }    ====> when this function is called it will show value 42
+     
+                 CHALLENGE 2 =====> WRITE FUNCTION THAT LOG OUT SUM
+                 
+                   // FIRST WE WILL INTIALIZE 3 VARIALE AND THEN WE WILL LOGOUT THE SUM TRHROUG FUNCTION
+                   
+                   // create function that logout sum of all 3 laptime
+
+
+                            LET LAP 1= 10
+                            LET LAP 2= 20
+                            LET LAP 3 = 30
+
+                                function totallap() {
+
+                                    let totalTime= lap1+ lap 2+ lap 3
+
+                                    console.log(totaltime)
+                                }         
+              -->
+
+
+  <!-- challenge 2 ===>   function increment
+          
+                        not its time to combine the previous knowledge and the freshly knowldege you gained
+                      
+                                          
+         TO DO  ==>    // crete a function that increment lapcompleted variable with 1 
+                
+                     // run it three times
+
+
+                              // initiliaze variable ==>              lapcompleted = 0
+                              // creating function ====>               function increment() {
+
+                                                                          lapcompleted = lapcompleted + 1
+                                                                            }
+                                                                          
+                                                                              increment()
+                                                                              increment()
+                                                                              increment()   by running it three times it would logout 1 then 2 and then 3                                           
+          
+     
+
+                     topic ===> INCREMENT ON CLICK
+
+                     DO THIS IN JS FILE
+                                        // INITIALIZE COUNT BY 0 
+                                        // LISTEN FOT CLICK ON INCREMENT BUTTON
+                                        // INCREMENT COUNT WHEN BUTTON IS CLCIKED
+                                        // CHANGE COUNT-EL IN HTML TO REFLECT NEW COUNT
+
+                                let count = 0
+
+                                     function increment() {
+
+                                       count = count+1       (  ===> u can check its working by wrting the code in js file and then run it and check conosle
+                                      console.log(count)
+     
+                                 
+                     
+                    }
+                               }
+                          topic ===> display the count
+
+                                 // dcument.GetElementById("count-el").inertext = 0
+                                        // CHANGE COUNT-EL IN HTML TO REFLECT NEW COUNT
+
+                                        //  now we will use document.getelementbyid("countel").innertext = 0
+                                        // let count el = document.GetElemetById("count-el)".innertext=o 
+                                      
+                   let countel = document.getElementById("count-el")          
+                                         
+                                         console.log(countel)
+                                         
+                                         let count = 0
+                                        
+                                         function increment() {
+                                        
+                                          count = count + 1      
+                                        
+                                          countel.innertext = count
+                                          
+                                          
+                    }
+
+
+                        //       ===> DOM ( DOCUMENT OBEJCT MODEL ===> aka THE WAY YOU USE JAVASCRIPT TO MODIFY WEBISTES
+       
+       
+
+                      //      ===>  SAVE BUTTON <===
+
+                     // CEATE A SAVE BUTTON    ( WILL BE MADE IN HTML FILE)
+                          
+                    //CREATE A FUNCTION NAMMES SAVE AND IT LOG OUTS COUNT    (IN JAVASCRIPT FILE)
+                          
+                      // SET THE BUTTON ID TO SAVE-BTN AND CALLS SAVE FUNCTION WHEN BUTTON IS CLCIKED
+ -->
+
+ <!-- <button id="save-btn" onclick="save()">SAVE</button> -->
+ <!-- -------------------------------------------------------- -->
+
+  <!-- WHAT IS A STRING  -->
+  <!-- "  ANY THING WRITTEN IN DOUL qUOTES IS A STRING" -->
+
+
+  <!-- ====> WRITING A STRING
+                  
+                         SUPPOSE YOU ARE CREATING A APP WHERE POEPLE AUTHENTICATE
+
+                         YOU NEED A USER . CREATE A VARIABLE USER NAME AND A MESSAGE THAT COINTAINS " YOU HAVE 3 NOTIFICATIONS"
+
+
+                          // CREATE A VARIABLE USER NAME
+                          //  CRATE VARIBALE MESSAGE "YOU HAVE THREE NOTIFICATIONS"-->
+
+  <!-- //  CODE ====> 
+                 //let UserName = Ashar
+
+                      Let Messsage = you have three notifications
+
+                      let UserMessage = Message + UserName
+                      
+                      <!-- console.log(UserMessage)   this will print you have three notificatins ashar -->
+
+
+
+  <!-- Topic ===> log greeting to cosole -->
+
+  <!-- // CREATE TWO VAIRBALES NAME AND greeting   , WITH NAME AND SELF DEFINED GREETING
+
+                         //CREATE THIRD VAIRABLE MyGreeting AND CONCATINATE BOTH STRINGS
+
+                         // LOG MY GREETING TO CONSOLE
+
+                         
+                         CODE==>           let MyName = "ashar"
+                                           
+                                            Let Greeting = "how are you"   to add spce in betwween lines add space in string
+                                           
+
+                                            MyGreeetng = Greeting +  MyName
+
+                                            conosle.log(MyGreeting)  ===> how are you ashar
+             -->
+
+
+
+  <!-- Topic==> String VS Number 
+            
+                                 When comparing string and a number , strinG always win and is predered in code
+
+                               Let point = 4   // whihc is a number  
+                                 
+                            let BonusPoint = "10" // which is a string
+
+                            console.log(point + Bonuspoiny)
+
+                            what would be printed ? it will print 410 because in comparion with string and number plus actually joins two number
+
+
+                       If it was like 
+                               
+                                              let point = "4"   // which is a string
+                                 
+                            let BonusPoint = "10" // which is a string
+
+                            console.log(point + Bonuspoiny)
+
+                                      then the result is 14 because both are strings
+
+                ===>  some examples to  make it clear
+
+                                console.log( 4 + 5 ) // result is 9
+                                conosle.log("4" + 10) // result is 410 ==> string is valuabe
+                                conosle.log(11 + "14") // reuslt  1114
+            -->
+
+  <!--topic : Rendering a welcome message -->
+
+  <!-- <P id="Welcome-el"></P> -->
+
+
+  <!-- // GRAB THE WELCOME EL PARAGRAPH AND STORE IT IN VAIRBALE WELCOME-EL
+
+                                     // Create wo vairbale naem and greeting
+                                     // RENDER THE WELCOME MESSAGE USING WELCOME LE .INNER TEXT
+
+
+                                     CODE ==>  Let  WelcomeEl = GetElementById(welcome-el)
+                                               Let Name = "ASAHR"
+
+                                               Let greeting = "Have a good day"
+
+                        rendering message ==>  Welcome-El.InnerText  = greeting + name  
+                                -->
+
+
+  <!-- 
+                               ===> Use += for count
+                                                      to know:   count +=  1 is same as count = count + 1
+                     -->
+
+
+  <!--CREATING A SAVE FEATURE  -->
+
+  <!-- IT WILL SHOE PRIVIOUS ENTRIES LIKE
+                                                                             PREVIOUS ENTRIES -67-2-45
+                                                                            
+                                                                            
+                                                                            
+                                                                                                               
+                             // GRAB THE EL PARAGRAPH ANF STORE IT IN VAR save-el -->
+
+  <!-- <p id="save-el">previous ENTRIES:</p> -->
+
+  <!-- let SaveEl = document.GetElementById(save-el) -->
+
+  <!-- 
+                                      // create a varibale that contains both count number and dash - 
+
+                                      // Render the vairbal ein save-el using inner text
+
+                              
+                                      code==>  funtion() {
+
+
+                                                  let countstr = count + "-"
+
+                                                  save-el.InnerText += countstr
+
+                                      }    
+                              
+                               This was all. You are finally done with your first java scrpt app
+
+                               -->
+
+
+  <!-- PRACTICE SESSION -->
+
+  <!-- 
+                                           ==> CREATING VARIABLE
+
+                                              // CREATE TWO VARIABLE fIRSTnAME AND lAST NAME
+                                              // CONCACENATE BOTH VAIRBALES TO 3 VARIBALE NAMED FullName
+                                              // LOGOUT FULL NAME
+
+                        ==> CREATING FUNCTION
+                                              Let Name = "linda!"
+                                          let Greeting = "Hi there"
+
+                                          // create a fucntion that log out hi there linda!
+                                               
+
+
+                               ====> INCREMENT AND DECREMENT
+                               
+                                          let Mypoint = 3
+                                           
+
+                                          / CREATR TWO FUNCTION,ADD 3 POINT AND REMOVE 1 POINT AND HAVE THEN
+
+                                          // CALl THEN FUCNTION TILL IT  LOGOUT 10
+
+
+                                        
+                                        
+                                        
+                                                                                                                                                                 
+                                        
+                                        
+                                        -->
+
+
+
+
+
+
+
+</body>
+
+</html>
